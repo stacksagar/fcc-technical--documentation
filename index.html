@@ -1,0 +1,285 @@
+<style>
+ * {
+  font-family: consolas, tahoma, arial;
+  margin: 0px;
+  transition: all 0.6s;
+ }
+
+ html {
+  scroll-behavior: smooth;
+ }
+
+ #body {
+  background: #eee;
+ }
+
+ #navbar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ #navbar header {
+  font-size: 1.5rem;
+ }
+
+ #navbar ul {
+  padding: 0px !important;
+ }
+
+ #navbar li {
+  margin: 10px 0px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+ }
+
+ #navbar li a {
+  font-size: 1rem;
+ }
+
+
+ #main-doc {
+  margin-left: 300px;
+  padding: 20px;
+  background: #eee;
+ }
+
+ .main-section {
+  margin: 100px 0px;
+  padding-top: 50px;
+  position: relative;
+ }
+
+ .main-section .container {
+  background: #fff;
+  padding: 40px 20px;
+ }
+
+ .main-section ul li {
+  margin: 10px 0px;
+ }
+
+ .main-section ul li a p {
+  display: inline;
+ }
+
+ .main-section header {
+  font-size: 1.7rem;
+  color: #ffffff;
+  background: #100e17;
+  padding: 30px;
+ }
+
+ code {
+  font-size: 0.7rem;
+  color: #333;
+ }
+
+ .main-section ul {
+  padding: 20px;
+ }
+
+ .toggleNav {
+  border-radius: 0px 5px 5px 0px;
+  position: fixed;
+  top: 44%;
+  left: 0px;
+  z-index: 99;
+  font-size: 2.3rem;
+  cursor: pointer;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px black;
+  height: 20px;
+  line-height: 20px;
+  display: none;
+ }
+
+ .toggleEffect {
+  left: 200px !important;
+ }
+
+ .showNav {
+  transform: translateX(0%) !important;
+ }
+
+ @media (max-width:767px) {
+
+  .toggleNav {
+   display: unset !important;
+  }
+
+  #navbar {
+   width: 200px;
+   z-index: 9;
+   text-align: center;
+  }
+
+  #navbar ul li {
+   list-style: none;
+  }
+
+  #navbar header {
+   font-size: 0.8rem;
+  }
+
+  .navbar {
+   transform: translateX(-110%);
+  }
+
+  #main-doc {
+   margin-left: unset;
+  }
+ }
+</style>
+
+<div class="toggleNav">⇒</div>
+<nav class="navbar" id="navbar">
+ <header> <strong>Top Tech Companies</strong> </header>
+ <ul>
+  <li> <a class="nav-link" href="#amazon"> Amazon </a> </li>
+  <li> <a class="nav-link" href="#apple"> Apple </a> </li>
+  <li> <a class="nav-link" href="#google"> Google </a> </li>
+  <li> <a class="nav-link" href="#microsoft"> Microsoft </a> </li>
+  <li> <a class="nav-link" href="#facebook"> Facebook </a> </li>
+  <li> <a class="nav-link" href="#ibm"> IBM </a> </li>
+ </ul>
+</nav>
+
+<main id="main-doc">
+ <section class="main-section" id="amazon">
+  <header> Amazon </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b>Founder & CEO:</b> Jeff Bezos </li>
+    <li> <b>Founded:</b> July 5, 1994 </li>
+    <li> <b>Headquarters:</b> Seattle, Washington, United States </li>
+    <li> <b>Employees:</b> Increase 1,000,000 (July 2020) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://amazon.com">
+      <p>amazon.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="main-section" id="apple">
+  <header> Apple </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b>Founder:</b> Steve Jobs </li>
+    <li> <b>CEO:</b> Tim Cook </li>
+    <li> <b>Founded:</b> April 1, 1976 </li>
+    <li> <b>Headquarters:</b> 1 Apple Park Way
+     Cupertino, California, U.S. </li>
+    <li> <b>Employees:</b> 137,000 (2019) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://apple.com">
+      <p>apple.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="main-section" id="google">
+  <header> Google </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b>Founder </b> Larry Page, Sergey Brin </li>
+    <li> <b>CEO:</b> Sundar Pichai </li>
+    <li> <b>Founded:</b> September 4, 1998 </li>
+    <li> <b>Headquarters:</b> 1600 Amphitheatre Parkway, Mountain View, California, U.S. </li>
+    <li> <b>Employees:</b> 114,096 (2019) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://google.com">
+      <p>google.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="main-section" id="microsoft">
+  <header> Microsoft </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b>Founder </b> Bill Gates, Paul Allen </li>
+    <li> <b>CEO:</b> Satya Nadella </li>
+    <li> <b>Founded:</b> April 4, 1975 </li>
+    <li> <b>Headquarters:</b> One Microsoft Way
+     Redmond, Washington, U.S. </li>
+    <li> <b>Employees:</b> 156,439 (2020) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://microsoft.com">
+      <p>microsoft.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="main-section" id="facebook">
+  <header> Facebook </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b> Founder & CEO</b> Mark Zuckerberg </li>
+    <li> <b>Founded:</b> February 4, 2004 </li>
+    <li> <b>Headquarters:</b> Menlo Park, California, United States </li>
+    <li> <b>Employees:</b> 56,653 (2020) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://facebook.com">
+      <p>facebook.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="main-section" id="ibm">
+  <header> IBM </header>
+  <div class="container">
+   <p> <code> "Tech Companies!" </code> </p>
+   <ul>
+    <li> <b> Founder</b> Charles Ranlett Flint, Thomas J. Watson</li>
+    <li> <b> CEO</b> Arvind Krishna </li>
+    <li> <b>Founded:</b> June 16, 1911 </li>
+    <li> <b>Headquarters:</b> Armonk, New York, U.S. </li>
+    <li> <b>Employees:</b> 352,600 (2019) </li>
+    <li> <b>Country:</b> United States of America</li>
+    <li> <b>Website:</b> <a href="https://ibm.com">
+      <p>ibm.com</p>
+     </a></li>
+   </ul>
+  </div>
+ </section>
+</main>
+
+<script>
+ const toggle = document.querySelector('.toggleNav');
+const navbar = document.querySelector('.navbar');
+let is = false;
+toggle.addEventListener('click', (e) => {
+	if (is) {
+		is = !is;
+		e.target.innerText = '⇒';
+		e.target.classList.remove('toggleEffect');
+		navbar.classList.remove('showNav');
+	} else {
+		is = !is;
+		e.target.innerText = '⇐';
+		e.target.classList.add('toggleEffect');
+		navbar.classList.add('showNav');
+	}
+});
+</script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
